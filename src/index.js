@@ -22,7 +22,6 @@ export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {
 
 const minMaxMultiplyResult = minMaxMultiply(2, 3, 4, 5);
 console.log(minMaxMultiplyResult); // 10
-alert(`Your result is ${minMaxMultiplyResult}.`);
 
 /**
  * Функция принимает один числовой аргумент, это радиус круга. Функция должна
@@ -40,7 +39,6 @@ export const getSquareOfCircle = (radius) => {
 
 const square = getSquareOfCircle(4);
 console.log(square); // 50.26548245743669
-alert(`Area is = ${square}.`);
 
 /**
  * Функция принимает число и точность к которой нужно округлить
@@ -58,8 +56,6 @@ export const getFixedValue = (number, accuracy) => {
 
 const fixedValue = getFixedValue(3.2345, 3);
 console.log(fixedValue); // 3.235
-
-alert(`Your result is ${fixedValue}.`);
 
 
 /**
@@ -82,9 +78,6 @@ const floorValue2 = getFlooroCeil(4.235);
 
 console.log(floorValue); // 4
 console.log(floorValue2); // 4
-
-alert(`Your result is ${floorValue}.`);
-alert(`Your result is ${floorValue2}.`);
 /**
  * Мы передаем два числа, от какого и до какого числа и функция должна
  * выдать ЦЕЛОЕ число в этом диапазоне. Постарайтесь подумать, не гуглите сразу
@@ -101,5 +94,3 @@ export const randomizer = (from, to) => {
 
 const randomNumber = randomizer(2, 5);
 console.log(randomNumber); // от 2 до 5, не знаю сколько)
-
-alert(`Your result is ${randomNumber}.`);
