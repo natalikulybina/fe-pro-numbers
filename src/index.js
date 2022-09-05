@@ -9,15 +9,9 @@
  */
 export const minMaxMultiply = (minFirst, minSecond, maxFirst, maxSecond) => {
 
-    if (minFirst >= minSecond && maxFirst >= maxSecond){
-        return minSecond * maxFirst; 
-    } else if (minFirst >= minSecond && maxFirst < maxSecond){
-        return minSecond * maxSecond;
-    } else if (minFirst < minSecond && maxFirst < maxSecond){
-        return minFirst * maxSecond;
-    } else if (minFirst < minSecond && maxFirst >= maxSecond){
-        return minFirst * maxFirst;
-    }
+    const multiplyResult = Math.min(minFirst,minSecond) * Math.max(maxFirst, maxSecond);
+    return multiplyResult;
+    
 };
 
 const minMaxMultiplyResult = minMaxMultiply(2, 3, 4, 5);
@@ -32,7 +26,7 @@ console.log(minMaxMultiplyResult); // 10
  */
 export const getSquareOfCircle = (radius) => {
 
-    return Math.PI * radius**2;
+    return Math.PI * radius ** 2;
     //return Math.round(Math.PI * radius**2);
 
 };
@@ -50,7 +44,7 @@ console.log(square); // 50.26548245743669
  */
 export const getFixedValue = (number, accuracy) => {
     
-    return Math.round(number * 10**accuracy) / 10**accuracy;
+    return Math.round(number * 10 ** accuracy) / 10 ** accuracy;
 
 };
 
